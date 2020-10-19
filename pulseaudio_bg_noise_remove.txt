@@ -1,0 +1,14 @@
+cancelling the background noise in linux os using pulse audio 
+
+cmd:
+sudo nano /etc/pulse/default.pa
+
+now search (Ctrl+w) for load-module module-echo-cancel or add to the last
+line
+
+save the file using ctrl + s and exit using ctrl+x
+
+cmd : 
+pulseaudio -k && pulseaudio --start
+ 
+
